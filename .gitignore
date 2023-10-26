@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*.DS_Store
+__pycache__/
+drafted.ipynb
+*.png
+*.csv
+.env
+*.docx
+docs/resources/*
