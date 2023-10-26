@@ -5,10 +5,8 @@ from langchain.retrievers import SVMRetriever
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.prompts import ChatPromptTemplate, PromptTemplate
-import os
 
 import os
-
 BASE_URL = os.getenv('BASE_URL')
 API_KEY = os.getenv('API_KEY')
 DEPLOYMENT_NAME = "api3_2"
