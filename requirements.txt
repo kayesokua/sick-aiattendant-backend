@@ -1,4 +1,6 @@
 Flask
 langchain
 python-dotenv
+pypdf
 gunicorn
+pydantic==1.10.9

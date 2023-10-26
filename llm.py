@@ -20,6 +20,10 @@ current_conversation = ""
 
 knowledgebase, conversation_history, user_question, prompt, GPT_answer, current_conversation
 
+def model_validator(cls, values):
+    # Perform validation here
+    return values
+
 def receive_question():
     data = request.json
     print(data)
@@ -68,6 +72,4 @@ def generate_prompt_and_call(rag_prompt_custom, all_pages, model):
         | rag_prompt_custom 
         | model
     )
-    return rag_chain   
-
-
+    return rag_chain

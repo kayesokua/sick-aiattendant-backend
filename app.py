@@ -3,17 +3,15 @@ from llm import *
 from langchain.llms import AzureOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.chat_models import AzureChatOpenAI
-
-app = Flask(__name__)
 import os
-
 from dotenv import load_dotenv
 load_dotenv()
 
-import os
+app = Flask(__name__)
 
 BASE_URL = os.getenv('BASE_URL')
 API_KEY = os.getenv('API_KEY')
+
 DEPLOYMENT_NAME = "api3_2"
 OPENAI_API_VERSION = "2023-07-01-preview"
 OPEN_API_TYPE = "azure"
